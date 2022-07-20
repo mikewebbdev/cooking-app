@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from "../../recipe/recipe.model";
 
 @Component({
   selector: 'app-recipe-item',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
+  recipes: Recipe[] = [
+    new Recipe('Test', 'testing class', 'https://cdn.pixabay.com/photo/2016/02/05/15/34/pasta-1181189_960_720.jpg')
+  ];
 
   constructor() { }
 
