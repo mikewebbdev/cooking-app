@@ -9,7 +9,8 @@ import {RecipeListService} from "./recipe-list.service";
   providers: [RecipeListService]
 })
 export class RecipeListComponent implements OnInit {
-  selectedRecipe: Recipe = new Recipe('', '', '');
+  // @ts-ignore
+  selectedRecipe: Recipe;
 
   constructor(private recipeListService: RecipeListService) { }
 

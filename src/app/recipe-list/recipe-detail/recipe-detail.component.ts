@@ -8,7 +8,8 @@ import {RecipeListService} from "../recipe-list.service";
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
-  @Input('selectedRecipe') selectedRecipe: Recipe = new Recipe('', '', '');
+  // @ts-ignore
+  @Input('selectedRecipe') selectedRecipe: Recipe;
 
   constructor() { }
 
