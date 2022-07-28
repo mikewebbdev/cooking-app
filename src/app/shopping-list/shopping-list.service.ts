@@ -18,4 +18,9 @@ export class ShoppingListService {
     // return a copy, not a direct reference
     return this.ingredients.slice();
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
 }
