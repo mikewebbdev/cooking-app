@@ -19,6 +19,17 @@ export class RecipeListService {
         new Ingredient('bacon', 3),
         new Ingredient('salad', 1),
       ]),
+    new Recipe(
+      'Hotdog',
+      'traditional greasy hotdog',
+      'https://static.fanpage.it/wp-content/uploads/sites/22/2020/01/hotdog.jpg',
+      [
+        new Ingredient('roll', 1),
+        new Ingredient('sausage', 1),
+        new Ingredient('mustard sauce', 1),
+        new Ingredient('tomato ketchup', 1)
+      ]
+    )
   ];
 
   constructor(private shoppingListService: ShoppingListService) {
